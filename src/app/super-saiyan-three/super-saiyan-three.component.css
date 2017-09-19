@@ -1,0 +1,8 @@
+div {
+	display: inline-block;
+	background-color: orange;
+	height: 200px;
+	width: 275px;
+	/*vertical-align: 177%;*/
+	box-sizing: border-box;
+}

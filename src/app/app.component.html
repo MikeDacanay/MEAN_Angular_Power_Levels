@@ -1,8 +1,9 @@
 {{title}}
 
-<form>
+<form (submit)='onSubmit()'>
 	<input type='text' [(ngModel)]='powerlevel.num' name='initial_level'>
 	<input type="submit" value='Calculate powers'>
 </form>
 <!-- {{powerlevel.num | json}} -->
-<app-super-saiyan-two></app-super-saiyan-two>
+<app-super-saiyan-two [passDown]='powerlevel'></app-super-saiyan-two>
+<app-super-saiyan-three [passDown]='powerlevel'></app-super-saiyan-three>

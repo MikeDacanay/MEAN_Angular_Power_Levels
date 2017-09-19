@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-super-saiyan-three',
@@ -6,10 +6,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./super-saiyan-three.component.css']
 })
 export class SuperSaiyanThreeComponent implements OnInit {
+	@Input() passDown;
+	constructor() { }
 
-  constructor() { }
+	ngOnInit() {
+  	}
 
-  ngOnInit() {
-  }
-
+  	title = 'SuperSaiyanThree';
 }

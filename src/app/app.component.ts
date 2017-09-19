@@ -6,6 +6,10 @@ import { Component } from '@angular/core';
 	styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-	powerlevel = {num:100};
+	powerlevel = {num:0, num2:0};
 	title = 'intial power level';
+
+	onSubmit(){
+		this.powerlevel.num2 = this.powerlevel.num;
+	}
 }

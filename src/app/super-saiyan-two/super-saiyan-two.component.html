@@ -1,4 +1,5 @@
 <div>
 	<p>{{title}}</p>
-	<p>Power Level: xxxx </p>
+	<p>Power Level: {{passDown.num2 * 150| json}} </p>
+	<h3 *ngIf= "passDown.num2 * 150 > 9000"> 'Over 9000!' </h3>
 </div>
